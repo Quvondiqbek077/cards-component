@@ -1,0 +1,119 @@
+@import url(./font.css);
+
+/* CUSTOM PROPS */
+:root {
+    --background: #F2F2F2;
+    --lux-bg: #004140;
+    --suvs-bg: #006971;
+    --sed-bg: #E28625;
+    --lexend-deca: 'Lexend_Deca';
+    --big-shoulders: 'Big_Shoulders_Display';
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+}
+
+/* GLOBAL STYLES */
+.section {
+    width: 920px;
+    display: flex;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.sedans-card {
+    background-color: var(--sed-bg);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.cards__text {
+    color: var(--background);
+    font-family: var(--big-shoulders);
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 35px;
+}
+
+.cards__title {
+    color: #fff;
+    font-family: var(--lexend-deca);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    opacity: 0.75;
+    width: 212px;
+    padding-top: 25px;
+    padding-bottom: 83px;
+}
+
+.button {
+    border-radius: 25px;
+    background: #F2F2F2;
+    border: none;
+    padding: 11px 31.5px 12px;
+    margin-bottom: 48px;
+    border: 2px solid #fff;
+    transition: 0.3s;
+}
+
+.cards__button {
+    color: #E28625;
+    font-family: var(--lexend-deca);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.button:active  {
+    border-radius: 25px;
+    border: 2px solid #FFF;
+    color: #fff;
+    background-color: transparent;
+}
+.button:active .cards__button{
+    color: #FFF;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+.luxury {
+    color: #004140;
+}
+
+.suvs {
+    color: #006971;
+}
+
+.suvs-card {
+    background-color: var(--suvs-bg);
+    padding-right: 48px;
+    padding-left: 48px;
+}
+
+.luxury-card {
+    background-color: var(--lux-bg);
+    border-radius: 0px 8px 8px 0px;
+    padding-right: 48px;
+    padding-left: 48px;
+}
+.image__cards__car{
+    padding-top: 48px;
+}
